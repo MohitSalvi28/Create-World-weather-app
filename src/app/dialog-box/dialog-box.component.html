@@ -1,0 +1,16 @@
+<!-- <p>dialog-box works!</p> -->
+<mat-spinner  *ngIf = "isDataLoading"  [diameter]="30" >
+</mat-spinner>
+
+
+<mat-dialog-content appearance="standard"  *ngIf="!isDataLoading">
+    <div class="alerts-form-container">
+        Temperature : {{temp}}
+    </div>
+    <div class="alerts-form-container">
+        Wind Speed : {{speed}}
+    </div>
+    <div class="alerts-form-container"  style="margin-bottom: 20px;">
+        Humidity : {{humidity}}
+    </div>
+</mat-dialog-content>
